@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hyper Gadget</title>
+
+<style>
+body{
+  margin:0;
+  font-family: Arial, sans-serif;
+  background:#f5f5f5;
+}
+header{
+  background:#e60012;
+  color:#fff;
+  padding:10px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.logo{
+  font-weight:bold;
+  font-size:18px;
+}
+.categories{
+  display:flex;
+  overflow-x:auto;
+  background:#fff;
+  padding:10px;
+}
+.category{
+  background:#eee;
+  padding:8px 12px;
+  margin-right:8px;
+  border-radius:6px;
+  font-size:13px;
+}
+.products{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:10px;
+  padding:10px;
+}
+.product{
+  background:#fff;
+  padding:8px;
+  border-radius:8px;
+  position:relative;
+}
+.badge{
+  position:absolute;
+  top:6px;
+  left:6px;
+  background:red;
+  color:#fff;
+  font-size:11px;
+  padding:2px 6px;
+  border-radius:4px;
+}
+.product img{
+  width:100%;
+  border-radius:6px;
+}
+.old{
+  text-decoration:line-through;
+  color:#777;
+  font-size:13px;
+}
+.new{
+  color:#e60012;
+  font-weight:bold;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div>☰</div>
+  <div class="logo">Hyper Gadget</div>
+  <div>🛒</div>
+</header>
+
+<div class="categories">
+  <div class="category">Power Bank</div>
+  <div class="category">Headphone</div>
+  <div class="category">Mobile Gadget</div>
+  <div class="category">Accessories</div>
+</div>
+
+<div class="products">
+  <div class="product">
+    <div class="badge">New</div>
+    <img src="https://via.placeholder.com/300">
+    <p>Wireless Charger Speaker</p>
+    <p class="old">৳ 1299</p>
+    <p class="new">৳ 799</p>
+  </div>
+
+  <div class="product">
+    <div class="badge">New</div>
+    <img src="https://via.placeholder.com/300">
+    <p>Fast Charging Power Bank</p>
+    <p class="old">৳ 2000</p>
+    <p class="new">৳ 1499</p>
+  </div>
+</div>
+
+</body>
+</html>
